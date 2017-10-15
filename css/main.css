@@ -324,6 +324,33 @@ video {
   text-decoration: none;
   padding: 9px 12px 8px 12px;
 }
+.alert {
+  transition: all 0.3s;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: 20px;
+  background-color: #2196f3;
+  color: #fff;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 5px rgba(50,50,50,0.2);
+}
+.alert:hover {
+  box-shadow: 0 1px 5px rgba(50,50,50,0.4);
+}
+.closebtn {
+  margin-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: #000;
+}
 .echo {
   font-size: 14px;
   font-size: 0.875rem;
