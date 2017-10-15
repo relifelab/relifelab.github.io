@@ -311,6 +311,18 @@ video {
 .modal-active {
   overflow: hidden;
 }
+.sttop {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #399c9c;
+  color: #fff;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 9px 12px 8px 12px;
+}
 .echo {
   font-size: 14px;
   font-size: 0.875rem;
