@@ -312,11 +312,12 @@ video {
   overflow: hidden;
 }
 .sttop {
+  box-shadow: 0 1px 5px rgba(50,50,50,0.2);
   z-index: 1;
   display: none;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 19px;
+  right: 20px;
   background: #399c9c;
   color: #fff;
   font-size: 0.9em;
