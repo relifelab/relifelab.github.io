@@ -129,8 +129,4 @@ $(function () {
 		$('body').css({ opacity: 1}).removeClass('queue-in');
 	}, 500);
 
-	document.oncontextmenu = function() {
-    	return false;
-	};
-
 });

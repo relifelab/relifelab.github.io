@@ -338,6 +338,23 @@ video {
 .alert:hover {
   box-shadow: 0 1px 5px rgba(50,50,50,0.4);
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-block-start: 2%;
+  margin-inline-start: 37%;
+  margin-inline-end: 37%;
+}
+.popup img {
+  box-shadow: 0 5px 11px rgba(50,50,50,0.4);
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+}
 .closebtn {
   margin-left: 15px;
   color: #fff;
@@ -350,6 +367,20 @@ video {
 }
 .closebtn:hover {
   color: #000;
+}
+.closebtn2 {
+  margin-right: 4%;
+  margin-top: 4%;
+  color: #000;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn2:hover {
+  color: #808080;
 }
 .echo {
   font-size: 14px;
@@ -1072,5 +1103,9 @@ video {
   }
   .highlight .code {
     padding: 0;
+  }
+  .popup {
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
   }
 }
