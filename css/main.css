@@ -349,7 +349,7 @@ video {
   margin-right: 37%;
 }
 .popup img {
-  box-shadow: 0 5px 11px rgba(50,50,50,0.4);
+  box-shadow: 0 5px 50px rgba(50,50,50,0.7);
   z-index: -1;
   max-width: 100%;
   max-height: 100%;
@@ -1105,7 +1105,8 @@ video {
     padding: 0;
   }
   .popup {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
   }
 }
