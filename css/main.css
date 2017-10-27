@@ -344,9 +344,9 @@ video {
   left: 0;
   bottom: 0;
   right: 0;
-  margin-block-start: 2%;
-  margin-inline-start: 37%;
-  margin-inline-end: 37%;
+  margin-top: 2%;
+  margin-left: 37%;
+  margin-right: 37%;
 }
 .popup img {
   box-shadow: 0 5px 11px rgba(50,50,50,0.4);
@@ -1105,7 +1105,7 @@ video {
     padding: 0;
   }
   .popup {
-    margin-inline-start: 2%;
-    margin-inline-end: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
