@@ -1,8 +1,4 @@
 # hexo robots.txt
 User-agent: *
 Allow: /
-Allow: /labreport/
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
 Sitemap: https://relifelab.github.io/sitemap.xml
