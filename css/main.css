@@ -1009,6 +1009,11 @@ video {
   body {
     padding-top: 0;
   }
+  .popup {
+    margin-left: 29%;
+    margin-right: 29%;
+    margin-top: 7%;
+  }
 }
 @media (max-width: 767px) {
   body {
