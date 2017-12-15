@@ -1022,7 +1022,9 @@ video {
     padding: 0;
     font-size: font-size: 0.75rem;;
   }
-  .head,
+  .head {
+    margin-top: 0px;
+  }
   .main,
   .foot {
     width: 100%;
