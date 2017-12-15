@@ -205,16 +205,13 @@ th {
   content: "\e601";
 }
 html {
-  background-color: #f2f2f2;
+  background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   color: #555;
   font-style: normal;
   text-rendering: optimizeLegibility;
-}
-html.index {
-  background-color: #fff;
 }
 body {
   font-size: 14px;
@@ -1015,6 +1012,9 @@ video {
   }
 }
 @media (max-width: 767px) {
+  html {
+    background: none;
+  }
   body {
     margin: 10px;
     margin-bottom: 20px;
