@@ -205,10 +205,6 @@ th {
   content: "\e601";
 }
 html {
-  background-image: url("../img/bg.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #555;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -378,6 +374,33 @@ video {
 }
 .closebtn2:hover {
   color: #808080;
+}
+.VYMape {
+  background: #fff;
+  bottom: 0;
+  direction: ltr;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .VYMape {
+    background: #e0e0e0;
+  }
+}
+.VYMape svg {
+  display: none;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .VYMape svg {
+    display: block;
+  }
 }
 .echo {
   font-size: 14px;
@@ -684,7 +707,7 @@ video {
 }
 .foot-copy {
   text-align: center;
-  color: #fff;
+  color: #7d7d7d;
   font-size: 12px;
   font-size: 0.75rem;
 }
@@ -992,7 +1015,7 @@ video {
 @media (max-width: 1023px) {
   html,
   .head {
-    margin-top: 40px;
+    margin-top: 0px;
   }
   body {
     padding-top: 0;
@@ -1004,12 +1027,10 @@ video {
   }
 }
 @media (max-width: 767px) {
-  html {
-    background: none;
-  }
+  html,
   body {
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 0px;
     padding: 0;
     font-size: font-size: 0.75rem;;
