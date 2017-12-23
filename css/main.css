@@ -627,14 +627,6 @@ video {
 .index-wrapper header {
   z-index: 10;
 }
-#particles-oli-wrapper {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
 .head,
 .main,
 .foot {
@@ -645,29 +637,30 @@ video {
 .foot {
   padding: 0 50px;
   height: 120px;
-  background-color: #399c9c;
+  background-color: #f5f5f5;
   line-height: 120px;
   box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .head-title {
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: normal;
-  color: #fff;
+  color: #666;
 }
 .head-title > a {
-  color: #fff;
+  color: #666;
 }
 .head-nav__item {
   display: inline-block;
   margin-left: 20px;
 }
 .head-nav__link {
-  color: #fff;
+  color: #666;
 }
 .head-nav__link:hover {
-  color: #f0f0f0;
-  text-decoration: underline;
+  color: #222;
+  text-decoration: none;
 }
 .main {
   margin-top: 30px;
