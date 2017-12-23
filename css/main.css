@@ -317,8 +317,8 @@ video {
   position: fixed;
   bottom: 19px;
   right: 20px;
-  background: #399c9c;
-  color: #fff;
+  background: #666;
+  color: #eee;
   font-size: 0.9em;
   text-decoration: none;
   padding: 9px 12px 8px 12px;
@@ -712,7 +712,7 @@ video {
 }
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
-  background-color: #399c9c;
+  background-color: #666;
 }
 .right p {
   text-align: right;
