@@ -801,10 +801,10 @@ video {
   display: inline-block;
 }
 .post__main img {
-  transition: all 0.3s;
-}
-.post__main img:hover {
-  box-shadow: 0 0 1px #ccc;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
 }
 .post__main .highlight {
   margin: 1.6em -60px;

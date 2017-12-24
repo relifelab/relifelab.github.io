@@ -90,7 +90,7 @@ $(function () {
 
 	// print hint
 
-	var comments = [
+	//var comments = [
 		'',
 		'                    .::::.            快捷键：',
 		'                  .::::::::.            j：下移',
@@ -124,9 +124,9 @@ $(function () {
 		$reward.slideToggle();
 	});
 
-	$('body').addClass('queue-in');
-	setTimeout(function() {
-		$('body').css({ opacity: 1}).removeClass('queue-in');
-	}, 500);
+	//$('body').addClass('queue-in');
+	//setTimeout(function() {
+	//	$('body').css({ opacity: 1}).removeClass('queue-in');
+	//}, 500);
 
 });
