@@ -805,6 +805,7 @@ video {
   backface-visibility: hidden;
   -webkit-background-clip: content-box;
   background-clip: content-box;
+  image-rendering: auto;
 }
 .post__main .highlight {
   margin: 1.6em -60px;
