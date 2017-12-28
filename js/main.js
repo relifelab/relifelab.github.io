@@ -128,9 +128,5 @@ $(function () {
 	//setTimeout(function() {
 	//	$('body').css({ opacity: 1}).removeClass('queue-in');
 	//}, 500);
-    
-    //structured data
-    var image = document.querySelector("img"); 
-    image.setAttribute("itemprop", "image");
 
 });
