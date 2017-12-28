@@ -324,6 +324,7 @@ video {
   padding: 9px 12px 8px 12px;
 }
 .alert {
+  z-index: 999;
   transition: all 0.3s;
   position: sticky;
   position: -webkit-sticky;
