@@ -650,6 +650,7 @@ video {
   font-size: 1.875rem;
   font-weight: normal;
   color: #666;
+  cursor: default;
 }
 .head-title > a {
   color: #666;
