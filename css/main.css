@@ -324,7 +324,7 @@ video {
   padding: 9px 12px 8px 12px;
 }
 .alert {
-  z-index: 0;
+  z-index: 1;
   transition: all 0.3s;
   position: sticky;
   position: -webkit-sticky;
@@ -371,7 +371,7 @@ video {
 .closebtn2 {
   margin-right: 4%;
   margin-top: 4%;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   float: right;
   font-size: 22px;
