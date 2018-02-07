@@ -1,4 +1,0 @@
-# hexo robots.txt
-User-agent: *
-Allow: /
-Sitemap: https://relifelab.github.io/sitemap.xml
