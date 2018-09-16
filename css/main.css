@@ -1152,6 +1152,10 @@ video {
   .alert {
     margin-bottom: 0px;
   }
+  #ads {
+    width: 100vw;
+/* height: 130px */
+  }
   #postnav {
     padding-top: 25px;
   }
