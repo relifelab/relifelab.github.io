@@ -17,4 +17,5 @@ deploy:
   keep-history: true
   verbose: true
   on:
-    branch: master
+    branch: source
+  target-branch: master
