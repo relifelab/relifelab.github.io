@@ -317,12 +317,13 @@ video {
   display: none;
   position: fixed;
   bottom: 19px;
-  right: 20px;
+  right: 108px;
   background: #666;
   color: #eee;
   font-size: 0.9em;
   text-decoration: none;
-  padding: 9px 12px 8px 12px;
+  padding: 8px 10px;
+  border-radius: 4px;
 }
 .alert {
   z-index: 1;
@@ -407,17 +408,17 @@ video {
 }
 #darkMode {
   cursor: pointer;
-  box-shadow: 0 1px 20px rgba(50,50,50,0.7);
+  box-shadow: 0 1px 5px rgba(50,50,50,0.2);
   z-index: 1;
   position: fixed;
-  top: 19px;
+  bottom: 19px;
   right: 20px;
   background: #666;
   color: #eee;
-  font-size: 2em;
+  font-size: 0.7em;
   text-decoration: none;
-  padding: 0px 14px;
-  border-radius: 50%;
+  padding: 10.5px 10px;
+  border-radius: 4px;
 }
 .echo {
   font-size: 14px;
@@ -1032,9 +1033,8 @@ video {
    Responsive
    ========================================================================== */
 @media (max-width: 1023px) {
-  html,
   .head {
-    margin-top: 0px;
+    margin-top: 50px;
   }
   body {
     padding-top: 0;
@@ -1046,11 +1046,10 @@ video {
   }
 }
 @media (max-width: 767px) {
-  html,
+  html {
+    background: none;
+  }
   body {
-    margin: 10px;
-    margin-bottom: 0px;
-    margin-top: 0px;
     padding: 0;
     font-size: font-size: 0.75rem;;
   }
@@ -1072,12 +1071,17 @@ video {
     float: none;
   }
   .main {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .head {
     margin-top: 0px;
     text-align: center;
+    box-shadow: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .head-nav {
     margin-top: 10px;
@@ -1087,14 +1091,14 @@ video {
     margin-left: 0;
   }
   .post {
-    margin-top: 20px;
+    margin: 0px;
   }
   .post__head.archive,
   .post__head {
     margin: 20px 5px;
   }
   .post__main {
-    margin: 20px 5px;
+    margin: 20px -5px;
   }
   .post__title,
   .post__time {
@@ -1144,6 +1148,9 @@ video {
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 0%;
+  }
+  .alert {
+    margin-bottom: 0px;
   }
   #postnav {
     padding-top: 25px;
