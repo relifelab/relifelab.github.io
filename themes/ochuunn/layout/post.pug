@@ -1,0 +1,25 @@
+extends views/main.pug
+
+block head
+  title
+    = page.title + ' - ' + config.title
+  style.
+    @media (max-width: 1023px){.head {margin-top: 50px !important;};}
+    @media (max-width: 767px){.head {margin-top: 20px !important;};}
+
+block main
+  .alert
+    span.closebtn(onclick="this.parentElement.style.display='none';") ×
+    |   labreport is best viewed using Firefox. 
+  #batteryAPI.alert(style="display:none;")
+    span.closebtn
+    |   Low power mode activated. 
+  
+  include mixins/post.pug
+  +post(page, 'post')
+  
+  include plugins/reward.pug
+  include plugins/livere.pug
+  include plugins/coinhive.pug
+  
+  != js('js/nocontext')

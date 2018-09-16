@@ -1,0 +1,128 @@
+.u-cf
+  &:before
+  &:after
+    content:''
+    display:table
+  &:after
+    clear:both
+
+.u-bfc
+  overflow: hidden
+
+.u-fl
+  float: left
+
+.u-fr
+  float: right
+
+.u-hidden 
+  display: none !important
+  visibility: hidden
+
+.modal-active
+  overflow: hidden
+
+.sttop
+    cursor pointer
+    box-shadow: 0 1px 5px rgba(50, 50, 50, 0.2)
+    z-index 1
+    display none
+    position fixed
+    bottom 19px
+    right 20px
+    background #666
+    color #eee
+    font-size 0.9em
+    text-decoration none
+    padding 9px 12px 8px 12px
+
+.alert
+    z-index: 1 //0 (opt)
+    transition: all .3s
+    position: sticky
+    position: -webkit-sticky
+    top 0
+    padding 20px
+    background-color #2196F3
+    color white
+    margin-bottom 15px
+    box-shadow: 0 1px 5px rgba(50, 50, 50, 0.2)
+    &:hover
+        box-shadow: 0 1px 5px rgba(50, 50, 50, 0.4)
+
+.popup
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    right 0
+    margin-top 2%
+    margin-left 37%
+    margin-right 37%
+    img
+      box-shadow 0 5px 50px rgba(50, 50, 50, 0.7)
+      z-index -1
+      max-width 100%
+      max-height 100%
+      position absolute
+
+.closebtn
+    margin-left 15px
+    color white
+    font-weight bold
+    float right
+    font-size 22px
+    line-height 20px
+    cursor pointer
+    transition 0.3s
+    &:hover
+        color black
+
+.closebtn2
+    margin-right 4%
+    margin-top 4%
+    color black //white (opt)
+    font-weight bold
+    float right
+    font-size 22px
+    line-height 20px
+    cursor pointer
+    transition 0.3s
+    &:hover
+        color gray
+
+#postnav
+    padding-top: 45px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgray;
+
+.postnav-
+    width: 50%;
+    display: inline-table;
+    color: #7d7d7d !important;
+
+#postnav-01
+    padding-left: 10px;
+    padding-right: 2px;
+
+#postnav-02
+    padding-left: 2px;
+    padding-right: 10px;
+
+#darkMode
+    cursor pointer
+    box-shadow: 0 1px 20px rgba(50,50,50,0.7)
+    z-index 1
+    position fixed
+    top 19px
+    right 20px
+    background #666
+    color #eee
+    font-size 2em
+    text-decoration none
+    padding 0px 14px
+    border-radius 50%

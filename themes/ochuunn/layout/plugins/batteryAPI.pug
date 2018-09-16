@@ -1,0 +1,34 @@
+script(defer="").
+  function uiUpd(battery) {
+  if(battery.charging===true){
+  document.getElementById('batteryAPI').style.display = 'none';
+  document.getElementsByTagName('html')[0].style.filter = 'inherit';
+  if(document.getElementById('ads')){
+  document.getElementById('ads').style.display = 'inherit';}
+  }else if(battery.charging===false){
+  if(battery.level<=0.15){
+  document.getElementById('batteryAPI').style.display = 'block';
+  document.getElementsByTagName('html')[0].style.filter = 'grayscale(100%)';
+  if(document.getElementById('ads')){
+  document.getElementById('ads').style.display = 'none';}
+  }else if(battery.level>=0.15){
+  document.getElementById('batteryAPI').style.display = 'none';
+  document.getElementsByTagName('html')[0].style.filter = 'inherit';
+  if(document.getElementById('ads')){
+  document.getElementById('ads').style.display = 'inherit';}
+  }
+  }
+  }
+  function batteryMon(battery){
+  uiUpd(battery);
+  battery.addEventListener('levelchange',
+  uiUpd.bind(null, battery));
+  battery.addEventListener('chargingchange',
+  uiUpd.bind(null, battery));
+  }
+  if('getBattery' in navigator) {
+  navigator.getBattery().then(batteryMon);
+  }
+
+  // https://googlechrome.github.io/samples/battery-status/
+  

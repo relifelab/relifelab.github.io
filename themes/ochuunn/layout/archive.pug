@@ -1,0 +1,32 @@
+extends views/main.pug
+
+block head
+  title
+    = config.title
+  style.
+    @media (max-width: 1023px){.head {margin-top: 50px !important;};}
+    @media (max-width: 767px){.head {margin-top: 20px !important;};}
+
+block main
+  .alert
+    span.closebtn(onclick="this.parentElement.style.display='none';") ×
+    |   Tip : Use browser's Find in page feature to locate labreport. 
+  #batteryAPI.alert(style="display:none;")
+    span.closebtn
+    |   Low power mode activated. 
+  include plugins/ads.pug
+  include mixins/post.pug
+  -var time
+  -site.posts.sort('date', 'desc').each(function(post) {
+    -var year = post.date.year()
+    -if (time != year) {
+      -if (time) {
+        h2.archive-title
+          = year
+      -}
+      -time = year
+    -}
+    +post(post, 'archive')
+  -})
+
+  include plugins/popup.pug

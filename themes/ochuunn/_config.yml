@@ -1,0 +1,37 @@
+# head
+menu:
+   <labreport> : /labreport
+   <labforum> : "https://tieba.baidu.com/p/5294393140"
+  # sitemap: /sitemap.xml
+  # other menus
+
+rss: # /atom.xml
+favicon: /img/favicon.png
+popup: # /img/popup.jpg
+
+date_format: 'MMMM D, YYYY'
+
+batteryAPI: true
+darkMode: true
+
+google_adsense: ca-pub-8288834688119567 # your id
+
+google_verification: bFtUUtms3dNoPFhah7h8iZtIS0If5z1UAWo7QlquAgo  # your token
+google_analytics: UA-64243736-4   # your id
+
+baidu_verification: 834cb6a15b4ba375943928bccaa86bed  # your token
+
+ads: true # false
+coinhive: # Q6u1BqXnppXn4YvwiJkSMCWV7V2UbNeR
+
+livere_id: # 'city'
+livere_uid: # 'MTAyMC8zMTMwMy83ODUy'
+
+start_year: 2017
+
+reward_images: # add your qr image
+# - type: '微信'
+#   url: '/img/wechat.png'
+# - type: '支付宝' 
+#   url: '/img/wechat.png'
+ 

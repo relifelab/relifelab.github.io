@@ -1,0 +1,32 @@
+script.
+  var isDarkMode = false;
+  function onDarkMode(){
+  document.getElementById('darkMode').innerHTML = '&#8857';
+  document.getElementById('darkMode').style.filter = 'brightness(1.0)';
+  document.getElementById('darkMode').style.padding = '0px 8px';
+  document.getElementsByTagName('html')[0].style.background = 'black';
+  document.getElementsByTagName('body')[0].style.filter = 'brightness(0.4)';
+  if (document.documentElement.webkitRequestFullScreen) {
+  document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+  }
+  isDarkMode = true;
+  }
+  function offDarkMode(){
+  document.getElementById('darkMode').innerHTML = '&#8901';
+  document.getElementById('darkMode').style.padding = '0px 14px';
+  document.getElementsByTagName('html')[0].style.background = '';
+  document.getElementsByTagName('body')[0].style.filter = 'inherit';
+  if (document.webkitCancelFullScreen) {
+  document.webkitCancelFullScreen();
+  }
+  isDarkMode = false;
+  }
+  function toggleDarkMode(){
+  if(!isDarkMode){
+  onDarkMode();
+  ga('send', 'event', 'button', 'on', 'darkMode');
+  }else if(isDarkMode){
+  offDarkMode();
+  ga('send', 'event', 'button', 'off', 'darkMode');
+  }
+  }

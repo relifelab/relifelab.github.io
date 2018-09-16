@@ -1,0 +1,12 @@
+doctype html
+html.index(lang="zh-CN")
+  head
+    include head.pug
+  body    
+    .index-wrapper
+      header.head.index
+        h1.head-title.u-fl
+          = config.title
+        include nav.pug
+    
+    include ../plugins/google.pug

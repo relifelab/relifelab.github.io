@@ -1,0 +1,37 @@
+doctype html
+html(lang="zh-CN")
+  head
+    include head.pug
+
+  //body(style="opacity:0")
+  body
+    header.head
+      h1.head-title.u-fl: a(href = config.root)
+        = config.title
+      include nav.pug
+      
+    main.main
+      block main
+    
+    footer.foot
+      div.foot-copy
+        if theme.start_year != date(new Date(), 'YYYY')
+          != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
+        else
+          != '&copy; ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
+        
+        //- 我自己才会显示
+        if config.author === 'Oliver Wang'
+          a(href="http://www.beianbaba.com/icp/ochukai.me" target="view_window" style="color:#fff")
+            != '（鲁ICP备16006255号-1）'
+    
+    if theme.darkMode
+      include ../plugins/darkMode.pug
+      #darkMode.a(onclick='toggleDarkMode()') &#8901
+    a.sttop &#9650
+    
+    include ../plugins/batteryAPI.pug
+    include ../plugins/google.pug
+    
+    != js('js/scroller')
+    != js('js/main')

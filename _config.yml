@@ -1,0 +1,91 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: ReLIFE Laboratory
+subtitle: 
+description: 完全不照計劃的失控人生。人生充滿波折的男主角海崎新太27歲的高校學園生活。每逢星期五，定时浏览此网站以便阅读最新报告！
+keywords: relife,relifelab,laboratory,github,重生计划,重返17岁,漫画,资源,阅读,report,话,comico,comic,manga,leewp14,lee.wp14,online,relifelab,read,report,labreport,lab
+author: lee.wp14
+language:
+- en
+- zh-CN
+timezone: Asia/Kuala_Lumpur
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://relifelab.github.io
+root: /
+permalink: labreport/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: labreport
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: README.md
+
+# Writing
+new_post_name: labreport/:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 0
+  order_by: -date
+  
+# Category & Tag
+default_category:
+category_map:
+tag_map:
+labreport: labreport
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 0
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: ochuunn
+
+# Sitemap
+sitemap:
+path: sitemap.xml
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: #git
+  repo: #https://github.com/relifelab/relifelab.github.io
+  branch: #master # remember that GitHub Pages uses this branch
+
