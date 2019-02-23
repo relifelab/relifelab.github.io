@@ -842,8 +842,6 @@ video {
   display: inline-block;
 }
 .post__main img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   -webkit-background-clip: content-box;
   background-clip: content-box;
   image-rendering: auto;
