@@ -1,6 +1,5 @@
 script(defer="").
-  function uiUpd(battery,override) {
-  if(!override){
+  function uiUpd(battery) {
   if(battery.charging===true){
   document.getElementById('batteryAPI').style.display = 'none';
   document.getElementsByTagName('html')[0].style.filter = 'inherit';
@@ -19,14 +18,7 @@ script(defer="").
   document.getElementById('ads').style.display = 'inherit';}
   }
   }
-  }else{
-  document.getElementById('batteryAPI').style.display = 'none';
-  document.getElementsByTagName('html')[0].style.filter = 'inherit';
-  if(document.getElementById('ads')){
-  document.getElementById('ads').style.display = 'inherit';}
   }
-  }
-
   function batteryMon(battery){
   uiUpd(battery);
   battery.addEventListener('levelchange',

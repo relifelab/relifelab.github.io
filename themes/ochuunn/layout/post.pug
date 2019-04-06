@@ -12,8 +12,8 @@ block main
     span.closebtn(onclick="this.parentElement.style.display='none';") ×
     |   labreport is best viewed using Firefox. 
   #batteryAPI.alert(style="display:none;")
-    span.closebtn
-    |   Low power mode activated. 
+    span.closebtn(onclick="this.parentElement.style.display='none'; uiUpd('',true);") x
+    |   Low power mode activated; Click x to turn off. 
   
   include mixins/post.pug
   +post(page, 'post')
