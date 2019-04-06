@@ -40,7 +40,8 @@ ga('send', 'event', 'button', 'on', 'darkMode');
 offDarkMode();
 ga('send', 'event', 'button', 'off', 'darkMode');
 }
-}</script><div class="a" id="darkMode" onclick="toggleDarkMode()">DARK MODE</div><a class="sttop">UP</a><script defer="">function uiUpd(battery) {
+}</script><div class="a" id="darkMode" onclick="toggleDarkMode()">DARK MODE</div><a class="sttop">UP</a><script defer="">function uiUpd(battery,override) {
+if(!override){
 if(battery.charging===true){
 document.getElementById('batteryAPI').style.display = 'none';
 document.getElementsByTagName('html')[0].style.filter = 'inherit';
@@ -59,7 +60,14 @@ if(document.getElementById('ads')){
 document.getElementById('ads').style.display = 'inherit';}
 }
 }
+}else{
+document.getElementById('batteryAPI').style.display = 'none';
+document.getElementsByTagName('html')[0].style.filter = 'inherit';
+if(document.getElementById('ads')){
+document.getElementById('ads').style.display = 'inherit';}
 }
+}
+
 function batteryMon(battery){
 uiUpd(battery);
 battery.addEventListener('levelchange',
