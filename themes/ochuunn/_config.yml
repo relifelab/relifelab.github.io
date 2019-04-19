@@ -23,7 +23,7 @@ bing_verification : 19CC7954F2485B5FDFCEEB43A97B54CC
 
 baidu_verification: 834cb6a15b4ba375943928bccaa86bed  # your token
 
-ads: true # false
+ads: false # false
 coinhive: # Q6u1BqXnppXn4YvwiJkSMCWV7V2UbNeR
 
 livere_id: # 'city'
